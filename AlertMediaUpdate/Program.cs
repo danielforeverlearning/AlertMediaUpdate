@@ -803,7 +803,7 @@ namespace AlertMediaUpdate
             //this is query from tortoise svn C:\wu\query_templates_and_examples\AlertMedia\AlertMedia Master Rosters.sql
             //*********************************************************************************************************************
 
-            string alertmedia_csv = "./2018_FALL_AlertMedia_Query_Results.csv";
+            string alertmedia_csv = "./alertmedia_query_results.csv";
             int alertmedia_firstname_index = 1;
             int alertmedia_lastname_index = 2;
             int alertmedia_9454_student_index = 28;
@@ -818,7 +818,7 @@ namespace AlertMediaUpdate
             List<ALERT_MEDIA_STRUCT> check_list = new List<ALERT_MEDIA_STRUCT>();
             StreamReader check_rdr = new StreamReader(alertmedia_csv);
 
-            string output_csv = "./2018_FALL_alertmedia_final.csv";
+            string output_csv = "./alertmedia_final.csv";
             StreamWriter out_writer = new StreamWriter(output_csv);
 
             //skip header in checklist
